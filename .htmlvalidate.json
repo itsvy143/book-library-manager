@@ -1,0 +1,15 @@
+
+{
+    "extends": [
+        "html-validate:recommended",
+        "html-validate:prettier"
+    ],
+    "rules": {
+        "doctype-style": [
+            "error",
+            {
+                "style": "lowercase"
+            }
+        ]
+    }
+}
