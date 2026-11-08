@@ -1,87 +1,85 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Book Library</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <header>
-        <h1>My Book Library</h1>
-        <p>Organize and keep track of your reading journey.</p>
+      <h1>My Book Library</h1>
+      <p>Organize and keep track of your reading journey.</p>
     </header>
 
     <main>
-        <section class="book-form-section">
-            <h2>Add a New Book</h2>
+      <section class="book-form-section">
+        <h2>Add a New Book</h2>
 
-            <form id="book-form">
-                <div>
-                    <label for="book-title">Book Title</label>
-                    <input
-                        type="text"
-                        id="book-title"
-                        placeholder="Enter book title"
-                        required
-                    >
-                </div>
+        <form id="book-form">
+          <div>
+            <label for="book-title">Book Title</label>
+            <input
+              type="text"
+              id="book-title"
+              placeholder="Enter book title"
+              required
+            />
+          </div>
 
-                <div>
-                    <label for="book-author">Author</label>
-                    <input
-                        type="text"
-                        id="book-author"
-                        placeholder="Enter author's name"
-                        required
-                    >
-                </div>
+          <div>
+            <label for="book-author">Author</label>
+            <input
+              type="text"
+              id="book-author"
+              placeholder="Enter author's name"
+              required
+            />
+          </div>
 
-                <div>
-                    <label for="book-status">Reading Status</label>
-                    <select id="book-status">
-                        <option value="Want to Read">Want to Read</option>
-                        <option value="Currently Reading">Currently Reading</option>
-                        <option value="Finished">Finished</option>
-                    </select>
-                </div>
+          <div>
+            <label for="book-status">Reading Status</label>
+            <select id="book-status">
+              <option value="Want to Read">Want to Read</option>
+              <option value="Currently Reading">Currently Reading</option>
+              <option value="Finished">Finished</option>
+            </select>
+          </div>
 
-                <button type="submit">Add Book</button>
-            </form>
-        </section>
+          <button type="submit">Add Book</button>
+        </form>
+      </section>
 
-        <section class="book-library-section">
-            <h2>My Collection</h2>
+      <section class="book-library-section">
+        <h2>My Collection</h2>
 
-            <div class="book-controls">
-                <input
-                    type="search"
-                    id="search-input"
-                    placeholder="Search by title or author..."
-                >
+        <div class="book-controls">
+          <input
+            type="search"
+            id="search-input"
+            placeholder="Search by title or author..."
+          />
 
-                <select id="status-filter">
-                    <option value="all">All Books</option>
-                    <option value="Want to Read">Want to Read</option>
-                    <option value="Currently Reading">Currently Reading</option>
-                    <option value="Finished">Finished</option>
-                </select>
-            </div>
+          <select id="status-filter">
+            <option value="all">All Books</option>
+            <option value="Want to Read">Want to Read</option>
+            <option value="Currently Reading">Currently Reading</option>
+            <option value="Finished">Finished</option>
+          </select>
+        </div>
 
-            <p id="book-count">Total Books: 0</p>
+        <p id="book-count">Total Books: 0</p>
 
-            <div id="book-list">
-                <p id="empty-message">Your library is empty. Add your first book!</p>
-            </div>
-        </section>
+        <div id="book-list">
+          <p id="empty-message">Your library is empty. Add your first book!</p>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>Book Library Manager | Built with HTML, CSS, and JavaScript</p>
+      <p>Book Library Manager | Built with HTML, CSS, and JavaScript</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
